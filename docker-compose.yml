@@ -1,0 +1,4 @@
+webserver:
+  build: .
+  ports:
+    - "20:3000"
