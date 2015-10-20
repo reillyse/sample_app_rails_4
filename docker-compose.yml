@@ -1,4 +1,17 @@
 webserver:
   build: .
   ports:
-    - "20:3000"
+    - 3000:3000
+  links:
+    - postgres
+  environment:
+    DATABASE_NAME: sample_production
+    DATABASE_HOST: postgres
+    RAILS_ENV: production
+    POSTGRES_USERNAME: postgres
+postgres:
+  image: postgres
+  ports:
+    - 5432:5432
+  
+  
