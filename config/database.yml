@@ -1,0 +1,9 @@
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: <%= ENV["DATABASE_NAME"] %>
+  pool: 5
+  port: 5432
+  password: <%= ENV["POSTGRES_PASS"] %>
+  host: <%= ENV["POSTGRES_PORT_5432_TCP_ADDR"] %>
+  username: <%= ENV["POSTGRES_USERNAME"] %>
