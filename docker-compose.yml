@@ -9,9 +9,9 @@ webserver:
     DATABASE_HOST: postgres
     RAILS_ENV: production
     POSTGRES_USERNAME: postgres
-postgres:
-  image: postgres
-  ports:
-    - 5432:5432
+# postgres:
+#   image: postgres
+#   ports:
+#     - 5432:5432
   
   
